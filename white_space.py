@@ -10,7 +10,6 @@ import os
 import autopep8
 import sys
 
-
 BASE_DIR = os.path.abspath(__file__)
 
 
@@ -22,7 +21,7 @@ def format_file(path):
     '''
     p = ""
     for dirpath, _, filenames in os.walk(path):
-        if(os.path.exists(os.path.join(dirpath, 'bin/activate'))):
+        if (os.path.exists(os.path.join(dirpath, 'bin/activate'))):
             p = dirpath
         for f in filenames:
             if f.endswith('.py'):
